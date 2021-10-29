@@ -13,7 +13,7 @@ const BookList = (props) => {
                         <h4>{book.title}</h4>
                         <p>Written By {book.author}</p>
                         <p><small>{book.published}</small></p>
-                        <button onClick={()=>handleRemove(book.id)}>Remove</button>
+                        <button className="btn btn-primary" onClick={()=>handleRemove(book.id)}>Remove</button>
                     </div>
                 ))
             }

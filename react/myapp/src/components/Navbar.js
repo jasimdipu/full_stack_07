@@ -1,14 +1,18 @@
+import {Link} from "react-router-dom";
+
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <h1>MyApp</h1>
-            <div className='links'>
-                <a href="/">Home</a>
-                <a href="/about">About Us</a>
-                <a href="/Blog">Blog</a>
-                <a href="/contact">Contact us</a>
-            </div>
-        </nav>
+        <div className="container-fluid">
+            <nav className="navbar-main">
+                <h1>MyApp</h1>
+                <div className='links'>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/contact">Contact us</Link>
+                </div>
+            </nav>
+        </div>
     );
 }
 
